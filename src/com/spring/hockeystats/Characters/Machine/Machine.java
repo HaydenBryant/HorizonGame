@@ -1,7 +1,7 @@
 package com.spring.hockeystats.Characters.Machine;
 
-public class Machine implements Machines {
-    protected String type;
+abstract class Machine implements Machines {
+    protected final String type;
     protected int attack;
     protected int armor;
     protected int health;
