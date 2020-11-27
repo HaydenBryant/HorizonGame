@@ -3,9 +3,9 @@ package com.spring.hockeystats.Dice;
 import java.util.Random;
 
 abstract class Die{
-    private int sides;
-    private int value;
-    private String type;
+    protected int sides;
+    protected int value;
+    protected String type;
 
     Random rand = new Random();
 
