@@ -3,23 +3,35 @@ package com.spring.hockeystats.Dice;
 import java.util.Random;
 
 public class BlueDie extends Die implements Dice {
-    private int sides;
-    private String type;
-    private int value;
-
 
     public BlueDie(int sides, String type) {
-        super(sides, type);
+        super(6, "Blue");
     }
 
-    @Override
-    public int roll() {
-        return 0;
-    }
 
     @Override
     public int getValue() {
-        return 0;
+        switch (landedOn){
+            case 1:
+                this.value = 1;
+                break;
+            case 2:
+                this.value = 2;
+                break;
+            case 3:
+                this.value = 1;
+                break;
+            case 4:
+                this.value = 2;
+                break;
+            case 5:
+                this.value = 2;
+                break;
+            case 6:
+                this.value = 3;
+                break;
+        }
+        return this.value;
     }
 
     @Override

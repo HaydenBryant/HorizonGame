@@ -5,6 +5,7 @@ import java.util.Random;
 abstract class Die{
     protected int sides;
     protected int value;
+    protected int landedOn;
     protected String type;
 
     Random rand = new Random();
@@ -16,7 +17,7 @@ abstract class Die{
     }
 
     public void roll(int sides){
-        value = rand.nextInt(sides) + 1;
+        landedOn = rand.nextInt(sides) + 1;
     }
 
 
