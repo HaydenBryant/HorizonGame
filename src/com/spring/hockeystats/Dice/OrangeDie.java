@@ -12,17 +12,11 @@ public class OrangeDie extends Die implements Dice{
     @Override
     public int getValue() {
         switch (landedOn){
-            case 1:
-                this.value = 1;
-                break;
-            case 2:
+            case 1: case 2: case 4:
                 this.value = 1;
                 break;
             case 3:
                 this.value = 2;
-                break;
-            case 4:
-                this.value = 1;
                 break;
             case 5:
                 this.value = 0;
